@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anagram.cs" />
     <Compile Include="Bob.cs" />
     <Compile Include="ETL.cs" />
     <Compile Include="Leap.cs" />

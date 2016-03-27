@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnagramTest.cs" />
     <Compile Include="BobTest.cs" />
     <Compile Include="ETLTest.cs" />
     <Compile Include="LeapTest.cs" />
