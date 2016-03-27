@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bob.cs" />
+    <Compile Include="ETL.cs" />
     <Compile Include="Leap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
