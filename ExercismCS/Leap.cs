@@ -11,10 +11,10 @@ namespace ExercismCS
     {
         public static bool IsLeap( int year )
         {
-            if ( year.IsDivisibleBy( 4 ) )
+            if ( IsDivisibleBy( year, 4 ) )
             {
-                if ( year.IsDivisibleBy( 100 ) )
-                    return year.IsDivisibleBy( 400 );
+                if ( IsDivisibleBy( year, 100 ) )
+                    return IsDivisibleBy( year, 400 );
                 else
                     return true;
             }
@@ -23,7 +23,7 @@ namespace ExercismCS
 
         }
 
-        private static bool IsDivisibleBy( this int num, int test )
+        private static bool IsDivisibleBy( int num, int test )
         {
             return num % test == 0;
         }
