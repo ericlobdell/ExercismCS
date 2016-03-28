@@ -8,7 +8,7 @@ namespace ExercismCS
 {
     public class School
     {
-        public Dictionary<int, List<string>> Roster { get; set; }
+        public Dictionary<int, List<string>> Roster { get; private set; }
 
         public School( )
         {
