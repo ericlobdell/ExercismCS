@@ -43,6 +43,7 @@
     <Compile Include="Anagram.cs" />
     <Compile Include="Bob.cs" />
     <Compile Include="ETL.cs" />
+    <Compile Include="Hamming.cs" />
     <Compile Include="Leap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
