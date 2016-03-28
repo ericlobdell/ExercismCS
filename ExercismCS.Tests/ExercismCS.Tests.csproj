@@ -47,6 +47,7 @@
     <Compile Include="AnagramTest.cs" />
     <Compile Include="BobTest.cs" />
     <Compile Include="ETLTest.cs" />
+    <Compile Include="GradeSchoolTest.cs" />
     <Compile Include="HammingTest.cs" />
     <Compile Include="LeapTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
