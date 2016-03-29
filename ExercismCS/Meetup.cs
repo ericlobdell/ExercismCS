@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExercismCS
 {
     public class Meetup
     {
-        private List<DateTime> _calendar;
+        private List<DateTime> _monthCalendar;
         private int [] _daysInMonth = new int []
             { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
@@ -19,17 +17,17 @@ namespace ExercismCS
             if ( Year.IsLeap( year ) && month == 2 )
                 daysInMonth++;
 
-            _calendar = new List<DateTime>( );
+            _monthCalendar = new List<DateTime>( );
 
             for ( int day = 1; day <= daysInMonth; day++ )
-                _calendar.Add( new DateTime( year, month, day ) );
+                _monthCalendar.Add( new DateTime( year, month, day ) );
 
         }
 
         public DateTime Day( DayOfWeek day, Schedule schedule )
         {
             DateTime meetupDate = DateTime.MinValue;
-            var potentialDays = _calendar
+            var potentialDays = _monthCalendar
                 .Where( d => d.DayOfWeek == day )
                 .ToArray( );
 

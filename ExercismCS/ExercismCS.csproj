@@ -52,6 +52,7 @@
     <Compile Include="Robot.cs" />
     <Compile Include="School.cs" />
     <Compile Include="SumOfMultiples.cs" />
+    <Compile Include="TwelveDaysSong.cs" />
     <Compile Include="WordCount.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

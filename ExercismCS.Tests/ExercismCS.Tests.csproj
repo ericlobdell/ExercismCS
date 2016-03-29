@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RobotNameTest.cs" />
     <Compile Include="SumOfMultiplesTest.cs" />
+    <Compile Include="TwelveDaysTest.cs" />
     <Compile Include="WordCountTest.cs" />
   </ItemGroup>
   <ItemGroup>
