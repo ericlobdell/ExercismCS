@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ExercismCS
@@ -16,17 +17,18 @@ namespace ExercismCS
 
         public Robot( )
         {
-            SetName( DateTime.Now.Millisecond );
+            SetName();
         }
 
         public void Reset()
         {
-            SetName( 500 );
+            SetName();
         }
 
-        private void SetName( int seed )
+        private void SetName( )
         {
-            Name = $"{GetRandomLetterSeq( seed )}{GetRandomNumber( seed )}";
+            Thread.Sleep( 10 );
+            Name = $"{GetRandomLetterSeq( DateTime.Now.Millisecond )}{GetRandomNumber( DateTime.Now.Millisecond )}";
         }
 
         private int GetRandomNumber( int seed )
