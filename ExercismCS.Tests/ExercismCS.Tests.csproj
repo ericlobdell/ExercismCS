@@ -50,6 +50,7 @@
     <Compile Include="GradeSchoolTest.cs" />
     <Compile Include="HammingTest.cs" />
     <Compile Include="LeapTest.cs" />
+    <Compile Include="MeetupTest.cs" />
     <Compile Include="NucleotideCountTest.cs" />
     <Compile Include="PhoneNumberTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
