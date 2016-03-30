@@ -30,12 +30,18 @@ namespace ExercismCS
 
         public string Verses( int startingVerse, int endingVerse )
         {
-            var lyrics = "";
+            return string.Join( 
+                "\n",
+                _song,
+                startingVerse - 1,
+                endingVerse - startingVerse + 1 ) + "\n";
 
-            for ( int i = startingVerse - 1; i <= endingVerse - 1; i++ )
-                lyrics += $"{_song [ i ]}\n";
+            //var lyrics = "";
 
-            return lyrics;
+            //for ( int i = startingVerse - 1; i <= endingVerse - 1; i++ )
+            //    lyrics += $"{_song [ i ]}\n";
+
+            //return lyrics;
         }
 
         public string Sing()
