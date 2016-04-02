@@ -17,42 +17,47 @@ namespace ExercismCS
 
         public double OnEarth()
         {
-            return 0.0;
+            return ComputeSpaceAge(1);
         }
 
         public double OnMars( )
         {
-            return 0.0;
+            return ComputeSpaceAge( 1.8808158 );
         }
 
         public double OnVenus( )
         {
-            return 0.0;
+            return ComputeSpaceAge( 0.61519726 );
         }
 
         public double OnMercury( )
         {
-            return 0.0;
+            return ComputeSpaceAge( 0.2408467 );
         }
 
         public double OnJupiter( )
         {
-            return 0.0;
+            return ComputeSpaceAge( 11.862615 );
         }
 
         public double OnSaturn( )
         {
-            return 0.0;
+            return ComputeSpaceAge( 29.447498 );
         }
 
         public double OnUranus( )
         {
-            return 0.0;
+            return ComputeSpaceAge( 84.016846 );
         }
 
         public double OnNeptune( )
         {
-            return 0.0;
+            return ComputeSpaceAge( 164.79132 );
+        }
+
+        private double ComputeSpaceAge( double multiplier )
+        {
+            return Seconds / ( _earthYearInSeconds * multiplier );
         }
     }
 }
