@@ -54,6 +54,7 @@
     <Compile Include="School.cs" />
     <Compile Include="SpaceAge.cs" />
     <Compile Include="SumOfMultiples.cs" />
+    <Compile Include="Triangle.cs" />
     <Compile Include="TwelveDaysSong.cs" />
     <Compile Include="WordCount.cs" />
   </ItemGroup>

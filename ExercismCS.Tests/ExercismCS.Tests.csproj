@@ -58,6 +58,7 @@
     <Compile Include="RobotNameTest.cs" />
     <Compile Include="SpaceAgeTest.cs" />
     <Compile Include="SumOfMultiplesTest.cs" />
+    <Compile Include="TriangleTest.cs" />
     <Compile Include="TwelveDaysTest.cs" />
     <Compile Include="WordCountTest.cs" />
   </ItemGroup>
