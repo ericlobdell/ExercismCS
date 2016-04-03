@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace ExercismCS
 {
-    public static class Scrabble
+    public class Scrabble
     {
         private static Dictionary<char, int> _scoreTable = new Dictionary<char, int>( )
         {
@@ -16,12 +16,13 @@ namespace ExercismCS
         };
         public static int Score( string word )
         {
-            return GetLetters( word ).Sum( GetLetterValue );
+            return GetLetters( word )
+                .Sum( GetLetterValue );
         }
 
         private static int GetLetterValue(char letter)
         {
-            return _scoreTable [ letter ];
+            return _scoreTable[ letter ];
         }
 
         private static char [] GetLetters( string word )
