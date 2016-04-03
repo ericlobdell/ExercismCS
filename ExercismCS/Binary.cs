@@ -9,15 +9,14 @@ namespace ExercismCS
 {
     public static class Binary
     {
-        public static int ToDecimal(string binary)
+        public static int ToDecimal( string binary )
         {
             var result = 0;
-            var len = binary.Length;
-            var rightMostIndex = len - 1;
+            var rightMostIndex = binary.Length - 1;
 
-            if ( IsValid(binary) )
-                for ( int i = 0; i < len; i++ )
-                    result += int.Parse( binary [ rightMostIndex - i ].ToString( ) ) * ( int ) Math.Pow( 2, i );
+            if ( IsValid( binary ) )
+                for ( int i = rightMostIndex; i >= 0; i-- )
+                    result += int.Parse( binary[ rightMostIndex - i ].ToString( ) ) * ( int ) Math.Pow( 2, i );
 
             return result;
         }
