@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnagramTest.cs" />
+    <Compile Include="BinaryTest.cs" />
     <Compile Include="BobTest.cs" />
     <Compile Include="ETLTest.cs" />
     <Compile Include="GigaSecondsTest.cs" />
